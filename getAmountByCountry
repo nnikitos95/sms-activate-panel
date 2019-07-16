@@ -4,7 +4,7 @@ $county = $_POST['country_id'] ?? 1; //айди страны в базе.
 
 //тут к базе коннектишься и остальное
 
-$sql ="SELECT * FROM simCountV1 WHERE id $country";
+$sql ="SELECT * FROM simCountV1 WHERE id = $country";
 $result = $conn->query($sql);
 $returnArray = [];
 if ($result->num_rows > 0) {
