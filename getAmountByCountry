@@ -1,0 +1,25 @@
+<?php
+
+$county = $_POST['country_id'] ?? 1; //айди страны в базе.
+
+//тут к базе коннектишься и остальное
+
+$sql ="SELECT * FROM simCountV1 WHERE id $country";
+$result = $conn->query($sql);
+$returnArray = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        if ($row["country"] == "russia") {
+            $returnArray['vk'] = $row["vk"];
+            //для остальных также
+        }
+    }
+}
+
+return json_encode($returnArray); 
+/*
+{
+    'vk' : 1000,
+    //и так далее
+}
+/*
