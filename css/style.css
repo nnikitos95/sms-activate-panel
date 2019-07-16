@@ -1,0 +1,74 @@
+body{
+    background-image: url("/backgound-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.col-md-3{
+    padding-top: 100px;
+}
+.leftMainDiv{
+    background: rgb(236,232,232);
+    background: linear-gradient(90deg, rgba(236,232,232,1) 1%,
+    rgba(252,252,252,1) 13%, rgba(252,252,252,1) 90%, rgba(236,232,232,1) 100%);
+}
+.countSim{
+    color: rgb(161, 161, 161);
+    vertical-align: bottom;
+    font-size: 12px;
+
+
+}
+.label {
+    font-weight: 100;
+}
+
+.buyNumber{
+    width: 30%;
+
+}
+
+.buyNumber, .numbersToBuy{
+    padding: 5px;
+    font-size: 11px;
+    float: right;
+    vertical-align: middle;
+}
+/*#btr{*/
+    /*background-color: blue;*/
+    /*background-image: none;*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+/*}*/
+/*#btm01{*/
+/*    position: center;*/
+
+/*}*/
+
+/*при нажатом*/
+.tabbed > td > label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-right: 0;
+
+}
+
+.radioLabel{
+    font-weight: 100 ;
+}
+.serviceNameRadio{
+
+}
+#vk_0{
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.table-condensed {
+    padding: 1px;
+}
+table {
+    padding: 8px;
+}
